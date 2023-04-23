@@ -1,1 +1,2 @@
 # react-devices
+information
