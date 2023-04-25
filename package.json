@@ -1,5 +1,5 @@
 {
-    "name": "react-devices",
+    "name": "react-device-display",
     "version": "1.0.1",
     "description": "",
     "main": "./dist/cjs/index.js",
