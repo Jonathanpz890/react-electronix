@@ -10,7 +10,7 @@ export const useStyles = ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        perspective: '2000px',
+        perspective: '120vw',
         perspectiveOrigin: '50% 100%',
         transition: 'right 1s',
         margin: '0 150px',
@@ -158,7 +158,7 @@ export const useStyles = ({
 interface StylesProps {
     width: number;
     macOpen: boolean;
-    openAngle: number;
+    openAngle?: number;
 }
 
 interface Styles {

@@ -20,5 +20,5 @@ export const useStyles = ({animation}: StylesProps) => ({
 })
 
 interface StylesProps {
-    animation: boolean
+    animation?: boolean
 }
