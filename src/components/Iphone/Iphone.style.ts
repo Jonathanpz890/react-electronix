@@ -7,7 +7,6 @@ export const useStyles = ({
         height: width * 2.07,
         position: 'relative',
         borderRadius: `${width / 5.8}px`,
-        // overflow: 'hidden',
         zIndex: '1'
     },
     display: {
@@ -15,8 +14,16 @@ export const useStyles = ({
         boxShadow: `inset 0 0 0 ${width * 0.001}px #8C826A, inset 0 0 0 ${width * 0.002}px #2C250C, inset 0 0 0 ${width * 0.003}px #77725B, inset 0 0 0 ${width * 0.004}px #E1D8C4, inset 0 0 0 ${width * 0.006}px #FFFBE7, inset 0 0 0 ${width * 0.007}px #E4DBC1, inset 0 0 0 ${width * 0.008}px #B5A586, inset 0 0 0 ${width * 0.009}px #A3906D, inset 0 0 0 ${width * 0.010}px #907F5E, inset 0 0 0 ${width * 0.012}px #928769, inset 0 0 0 ${width * 0.013}px #383624, inset 0 0 0 ${width * 0.014}px #404037, inset 0 0 0 ${width * 0.015}px #101109, inset 0 0 0 ${width * 0.04}px black`,
         width: '100%',
         height: '100%',
-        // background: 'rgb(10, 10, 10)',
-        zIndex: '-1'
+        background: 'rgb(10, 10, 10)',
+        zIndex: '-1',
+        overflow: 'hidden'
+    },
+    children: {
+        width: `${width * 0.917}px`,
+        height: `${width * 1.989}px`,
+        overflow: 'scroll',
+        borderRadius: `${width / 7.5}px`,
+        margin: `${width * 0.0415}px auto`,
     },
     floatinIsland: {
         width: `${width * 0.267}px`,
@@ -80,7 +87,15 @@ export const useStyles = ({
         borderRight: 'none',
         backgroundImage: 'linear-gradient(to bottom, #AEA289 0%, #FFFCE0 2%, #5D5032 4%, #E6D5B4 10%, #E6D5B4 90%, #5D5032 94%, #FFFCE0 98%, #AEA289 100%)',
         boxShadow: `inset -${width * 0.001}px 0 0 #E5D6B4`,
+    },
+    statusBar: {
+        backgroundColor: 'white'
+    },
+    timeContainer: {
 
+    },
+    iconContainer: {
+        
     }
 })
 
