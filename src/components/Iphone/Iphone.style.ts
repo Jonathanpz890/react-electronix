@@ -2,7 +2,6 @@ export const useStyles = ({
     width
 }: StyleProps) => ({
     iphone: {
-        margin: '20px',
         width,
         height: width * 2.07,
         position: 'relative',
