@@ -1,77 +1,67 @@
-# React-Devices
+# React Device Display
 
-React-Devices is a React library written in TypeScript that provides a customizable MacBook Pro-style device component. This library allows developers to quickly and easily add a realistic MacBook Pro to their React applications.
+`react-device-display` is a library that provides components to simulate the appearance of devices like iPhones and Macbooks in a React application.
 
 ## Installation
 
-To install React-Devices, use npm:
+You can install `react-device-display` using npm:
 
 ```
-npm install react-devices
+npm install react-device-display
 ```
 
 ## Usage
 
-To use React-Devices in your React application, first import the `Mac` component from the library:
+### Mac component
+
+The `Mac` component simulates the appearance of a Macbook. It accepts the following props:
+
+| Prop         | Type              | Default | Description                                                                                                                 |
+| ------------ | ----------------- | ------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `open`       | boolean           | `true`  | Whether the Macbook is open or closed                                                                                       |
+| `width`      | number            | `600`   | The width of the Macbook in pixels                                                                                          |
+| `startup`    | boolean           | `false` | Whether to show a startup animation                                                                                         |
+| `animateOpen`| boolean           | `false` | Whether to animate the opening/closing of the Macbook                                                                       |
+| `openAngle`  | number (degrees)  | `0`     | The angle at which the Macbook opens (0 for fully flat, 90 for fully open)                                                   |
+| `children`   | React.ReactNode  |         | The content to display on the Macbook screen                                                                                |
+
+Here's an example usage of the `Mac` component:
 
 ```jsx
-import { Mac } from 'react-devices';
-```
-
-Then, use the `Mac` component in your React application:
-
-```jsx
-<Mac
-  startup={true}
-  animateOpen={false}
-  open={true}
-  width={800}
-  openAngle={110}
->
-  {/* Add your content here */}
-</Mac>
-```
-
-### Props
-
-The `Mac` component accepts the following props:
-
-| Prop | Type | Description |
-| --- | --- | --- |
-| `startup` | boolean | Determines whether the startup animation is shown. |
-| `animateOpen` | boolean | Determines whether the device opens with an animation. |
-| `open` | boolean | Determines whether the device is open or closed. |
-| `width` | number | The width of the device in pixels. |
-| `openAngle` | number | The angle at which the device opens, in degrees. (0 is open, 90 is closed), this is meant for using with scroll animation |
-| `children` | ReactNode | The content to be displayed inside the device. |
-
-## Example
-
-Here's an example of how to use the `Mac` component:
-
-```jsx
-import React from 'react';
-import { Mac } from 'react-devices';
+import { Mac } from 'react-device-display';
 
 function App() {
   return (
-    <div>
-      <Mac
-        startup={true}
-        animateOpen={false}
-        open={false}
-        width={800}
-        openAngle={110}
-      >
-        <h1>Welcome to my React application!</h1>
-      </Mac>
-    </div>
+    <Mac open={true} width={800} animateOpen={true} startup={true}>
+      <h1>Hello, World!</h1>
+    </Mac>
   );
 }
+```
 
-export default App;
+### Iphone component
+
+The `Iphone` component simulates the appearance of an iPhone. It accepts the following props:
+
+| Prop        | Type             | Default | Description                                                         |
+| ----------- | ---------------- | ------- | ------------------------------------------------------------------- |
+| `width`     | number           | `400`   | The width of the iPhone in pixels                                   |
+| `children`  | React.ReactNode |         | The content to display on the iPhone screen (e.g. a mobile website) |
+
+Here's an example usage of the `Iphone` component:
+
+```jsx
+import { Iphone } from 'react-device-display';
+
+function App() {
+  return (
+    <Iphone width={400}>
+      <h1>Hello, World!</h1>
+    </Iphone>
+  );
+}
 ```
 
 ## License
 
-React-Devices is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This library is licensed under the MIT License.
