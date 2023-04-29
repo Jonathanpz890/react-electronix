@@ -33,7 +33,8 @@ export const useStyles = ({
         position: 'absolute',
         top: `${width * 0.064}px`,
         left: '50%',
-        transform: 'translateX(-50%)'
+        transform: 'translateX(-50%)',
+        zIndex: '1'
     },
     camera: {
         width: `${width * 0.022}px`,
