@@ -19,7 +19,7 @@ export const useStyles = ({
         transformStyle: 'preserve-3d',
         transform: `rotateX(-${macOpen ? openAngle ?? 0 : 90}deg)`,
         transformOrigin: '50% 100%',
-        transition: 'transform 0.6s  cubic-bezier(0.35, 0.01, 1, 0.99)'
+        // transition: 'transform 0.6s  cubic-bezier(0.35, 0.01, 1, 0.99)'
     },
     lid: {
         position: 'absolute',
