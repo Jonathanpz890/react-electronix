@@ -7,4 +7,5 @@ export interface MacProps {
     animateOpen?: boolean;
     openAngle?: number;
     children?: ReactNode;
+    perspective?: number;
 }

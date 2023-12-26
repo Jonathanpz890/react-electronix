@@ -1,7 +1,8 @@
 export const useStyles = ({ 
     width, 
     macOpen, 
-    openAngle
+    openAngle,
+    perspective
 }: StylesProps): Styles => ({
     mac: {
         width,
@@ -10,7 +11,7 @@ export const useStyles = ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        perspective: '120vw',
+        perspective: perspective ? `${perspective}px` : '120vw',
         perspectiveOrigin: '50% 100%',
         transition: 'right 1s',
         margin: '0 150px',
@@ -158,6 +159,7 @@ interface StylesProps {
     width: number;
     macOpen: boolean;
     openAngle?: number;
+    perspective?: number;
 }
 
 interface Styles {
