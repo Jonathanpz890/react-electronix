@@ -14,7 +14,7 @@ export const useStyles = ({
         perspective: `${perspective}vw`,
         perspectiveOrigin: '50% 100%',
         transition: 'right 1s',
-        margin: '0 150px',
+        margin: `0 ${width / 9}px`,
     },
     topPortion: {
         transformStyle: 'preserve-3d',
