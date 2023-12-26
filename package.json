@@ -7,7 +7,7 @@
     "types": "./dist/esm/index.d.ts",
     "scripts": {
         "build": "npm run build:esm && npm run build:cjs",
-        "build:esm": "tsc",
+        "build:esm": "npx tsc",
         "build:cjs": "tsc --module commonjs --outDir dist/cjs",
         "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
         "dev": "npm-watch"
@@ -42,6 +42,7 @@
         "react-dom": "^18.2.0",
         "react-icons": "^4.8.0",
         "react-use-draggable-scroll": "^0.4.7",
+        "tsc": "^2.0.4",
         "typescript": "^5.0.4"
     },
     "peerDependencies": {
