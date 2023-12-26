@@ -11,7 +11,7 @@ export const useStyles = ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        perspective: perspective ? `${perspective}px` : '120vw',
+        perspective: `${perspective}vw`,
         perspectiveOrigin: '50% 100%',
         transition: 'right 1s',
         margin: '0 150px',
