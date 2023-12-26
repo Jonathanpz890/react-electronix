@@ -1,13 +1,13 @@
-# React Device Display
+# React ElectroniX
 
-`react-device-display` is a library that provides components to simulate the appearance of devices like iPhones and Macbooks in a React application.
+`react-electronix` is a library that provides components to simulate the appearance of devices like iPhones and Macbooks in a React application.
 
 ## Installation
 
-You can install `react-device-display` using npm:
+You can install `react-electronix` using npm:
 
 ```
-npm install react-device-display
+npm install react-electronix
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ The `Mac` component simulates the appearance of a Macbook. It accepts the follow
 Here's an example usage of the `Mac` component:
 
 ```jsx
-import { Mac } from 'react-device-display';
+import { Mac } from 'react-electronix';
 
 function App() {
   return (
@@ -51,7 +51,7 @@ The `Iphone` component simulates the appearance of an iPhone. It accepts the fol
 Here's an example usage of the `Iphone` component:
 
 ```jsx
-import { Iphone } from 'react-device-display';
+import { Iphone } from 'react-electronix';
 
 function App() {
   return (
