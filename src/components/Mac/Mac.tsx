@@ -9,7 +9,7 @@ export const Mac = ({
     width,
     openAngle,
     children,
-    perspective = 120
+    perspective = 2000
 }: MacProps) => {
     const [macOpen, setMacOpen] = useState(animateOpen ? false : open)
     const styles = useStyles({ width, macOpen, openAngle, perspective })
